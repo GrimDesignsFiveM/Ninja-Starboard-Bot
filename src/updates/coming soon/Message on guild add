@@ -1,0 +1,19 @@
+//////////////////////////////***GUILD CREATE FUNCTION***////////////////////////////////////////////////
+/* This event is triggered when the bot is invited to a new server, Once the bot joins 
+the new server it will send the embed below, to the server owner in a private message(DM) */
+client.on("guildCreate", guild => {
+  // This event triggers when the bot joins a guild.
+  console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
+  client.user.setGame(`nb/help in ${client.guilds.size} Servers`, `https://www.twitch.tv/monstercat`);
+const embed = new Discord.RichEmbed()
+    .setTitle(`Ninja Bot`)
+    .setColor(0x00AE86)
+    .setDescription(`Hello!, Thanks for adding me to your guild!`)
+	.addField("User Data Collection", "``[nb/opt-in]`` or ``[nb/opt-out]`` Confirms or dents if you would like to allow us to collect your data for commands like **UserInfo** **ServerInfo** and more \n Required due to Discords new TOS")
+        .addField(`About Ninja Bot`, `[nb/about] > Tells you everything you need to know about me`)
+        .addField(`Help & Support`, `[nb/support > Shows you my Help/Support message`)
+        .addField(`Commands List`, `[nb/help] > Shows all of my commands modules and their usage`)
+        .addField(`Support Server`, `[Join Our Discord](https://discord.gg/CRhNHBs)`)
+        .setFooter(`© Ninja Bot v1.00`, `https://cdn.discordapp.com/avatars/595155471611068426/b6ffdf628b989aa8c55c446ff623042f.png?size=2048?size=1024`);
+       guild.owner.user.send({ embed: embed });
+   });

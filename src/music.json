@@ -1,0 +1,14 @@
+{
+	"play": "play",
+	"search": "search",
+	"skip": "skip",
+	"queue": "queue",
+	"pause": "pause",
+	"resume": "resume",
+	"remove": "remove",
+	"volume": "volume",
+	"leave": "leave",
+	"clearqueue": "clearqueue",
+	"np": "np",
+    "help": "help"
+}
