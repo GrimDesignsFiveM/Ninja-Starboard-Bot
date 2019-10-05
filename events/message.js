@@ -1,9 +1,10 @@
 const Discord = require('discord.js');
+const config = require("../data/config.json")
 
 module.exports = (star, message) => {
     if (message.author.bot) return;
 
-    if (message.content.indexOf(star.config.prefix) !== 0) return;
+    if (message.content.indexOf(config.prefix) !== 0) return;
 
 
     let blEmbed = new Discord.RichEmbed()
