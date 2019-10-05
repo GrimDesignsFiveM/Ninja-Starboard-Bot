@@ -37,7 +37,8 @@ const embed2 = new Discord.RichEmbed()
 
      embed2.setTitle("Ninja Starboard Channel")
       embed2.setColor(config.embedColor)
-       embed2.setDescription("You do not have a ``ninja-starboard`` channel so i have created one for you and placed it at the top of the channel lis, Please place it where you wish")
+       embed2.setDescription("You do not have a ``ninja-starboard`` channel so i have created one for you and placed it at the top of the channel list, Move it where ever you wish")
+        embed2.addField("Note", "To post the message you reacted to you will have to remove the reaction and do it again")
         embed2.setFooter("© Ninja Starboard Bot")  
 
     const starboardChannel = reaction.message.guild.channels.find("name", "ninja-starboard");
