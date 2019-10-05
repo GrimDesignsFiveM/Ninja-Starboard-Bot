@@ -40,5 +40,5 @@ exports.help = {
     name: 'setup',
     description: 'Tells you how to setup Ninja Starboard',
     usage: 'star setup',
-    group: 'Help'
+    group: 'System'
   };
