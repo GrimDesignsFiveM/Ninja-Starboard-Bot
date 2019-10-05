@@ -1,9 +1,9 @@
 {
-  "name": "NinjaBot",
+  "name": "Ninja Starboard",
   "version": "1.0.0",
   "lockfileVersion": 1,
   "description": "",
-  "main": "index.js",
+  "main": "star.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
