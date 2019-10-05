@@ -64,6 +64,7 @@ const InvPerm = require('./data/config.json');
 const star = new Discord.Client();
 const starLog = console.log;
 const config = require('./data/config.json');
+const embeds = require('./data/embeds.json');
 const adlinks = require('./src/blacklist/blacklistedlinks.json');
 const offensivewords = require('./src/blacklist/blacklistedwords.json');
 const profanities = require('./src/blacklist/blacklistedswears.json');
@@ -128,7 +129,7 @@ const embed = new Discord.RichEmbed()
  embed.addField("About Me", "``star about`` Tells you some info about me")
  embed.addField("Setup Help", "``star setup`` Shows you how to properly set me up")
  embed.addField("Starboard Invite", `[Invite Me Here](https://discordapp.com/api/oauth2/authorize?client_id=629452785112449054&permissions=2147483127&scope=bot)`)
- embed.setFooter(`${config.embedFooter}`, `${config.embedLink}`);
+ embed.setFooter(`${embeds.embedFooter}`, `${embeds.embedLink}`);
 
   starLog(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
   star.user.setGame(`gen help in ${star.guilds.size} Servers`, `https://www.twitch.tv/monstercat`);
