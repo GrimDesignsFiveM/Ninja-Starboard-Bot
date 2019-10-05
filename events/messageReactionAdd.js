@@ -40,7 +40,7 @@ const embed2 = new Discord.RichEmbed()
         embed2.setFooter("© Ninja Starboard Bot")  
 
     const starboardChannel = reaction.message.guild.channels.find("name", "ninja-starboard");
-         if (!message.guild.channels.exists("name", "ninja-starboard")) return message.channel.send(embed2) .then(message.guild.createChannel("ninja-starboard", "text"))       
+         if (!message.guild.channels.exists("name", "ninja-starboard")) return reaction.message.channel.send(embed2) .then(message.guild.createChannel("ninja-starboard", "text"))       
          //if(!message.guild.channels.exists("name", "ninja-starboard")) return reaction.message.channel.send("Nope")
     try {
         if(reaction.emoji.name !== "⭐") return console.log('1');
