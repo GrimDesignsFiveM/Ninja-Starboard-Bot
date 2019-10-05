@@ -74,7 +74,7 @@ let cmdEmbed = new Discord.RichEmbed()
     .setTimestamp()
     .setDescription(`<@${message.author.id}> Sorry that command doesn't exist :shrug:`)
 
-    const args = message.content.slice(star.config.prefix.length).trim().split(/ +/g);
+    const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
     //console.log(args);
     const command = args.shift().toLowerCase();
     //console.log(command);
