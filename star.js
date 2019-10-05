@@ -110,9 +110,6 @@ let i = 0;
     }, time1)
   });
 
-  // "ready" isn't really ready. We need to wait a spell.
-  wait(1000); 
-
 client.on("guildCreate", guild => {
   // This event triggers when the bot joins a guild.
 let gcEmbed = new Discord.RichEmbed()
