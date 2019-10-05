@@ -62,7 +62,7 @@ const prefix3 = require('./data/config.json');
 const prefix4 = require('./data/config.json');
 const InvPerm = require('./data/config.json');
 const star = new Discord.Client();
-const starLog
+const starLog = console.log;
 const config = require('./data/config.json');
 const adlinks = require('./src/blacklist/blacklistedlinks.json');
 const offensivewords = require('./src/blacklist/blacklistedwords.json');
