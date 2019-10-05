@@ -81,7 +81,7 @@ const type3 = config.type3
 const type4 = config.type4
 const activity4 = config.activity4
 const time1 = config.activitytime
-client.music = require("discord.js-musicbot-addon");
+star.music = require("discord.js-musicbot-addon");
 const musicCommands = require("./src/music.json");
 
 //////////////////////////////***PLAYING STATUS, INVITE TIMEOUTS & MORE***////////////////////////////////////////
