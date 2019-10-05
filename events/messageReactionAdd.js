@@ -32,6 +32,7 @@ module.exports = async (client, reaction, user) => {
     const message = reaction.message;
     const config = require('../data/config.json');
     const starboardChannel = reaction.message.guild.channels.find("name", "ninja-starboard");
+      if(!message.guild.channels.exists("name", "ninja-starboard")) return reaction.message.channel.send("Nope")
     try {
         if(reaction.emoji.name !== "⭐") return console.log('1');
         const fetch = await starboardChannel.fetchMessages({ limit: 100 }).then(console.log('2'));
@@ -44,7 +45,7 @@ module.exports = async (client, reaction, user) => {
             await starMsg.edit({ embed }).then(console.log('8'))
         }
     if(!stars) {
-        if(!message.guild.channels.exists("name", "ninja-starboard")) throw `It appears that you do not have a ninja-starboard channel.`
+        //if(!message.guild.channels.exists("name", "ninja-starboard")) throw `It appears that you do not have a ninja-starboard channel.`
         const embed = await starEmbed(15844367, message.cleanContent, message.author.tag, message.author.displayAvatarURL, new Date(), `⭐ 1 | ${message.id}`);
         await starboardChannel.send({ embed });
     }
