@@ -28,7 +28,7 @@ async function starEmbed(color, description, author, thumbnail, timestamp, foote
     return embed;
 }
 
-exports.run = async (client, message, args) => {
+exports.run = async (client, args) => {
 const embed2 = new Discord.RichEmbed()
 
      embed2.setTitle("Ninja Starboard Channel")
