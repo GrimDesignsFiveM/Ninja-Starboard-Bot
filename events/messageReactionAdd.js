@@ -28,11 +28,13 @@ async function starEmbed(color, description, author, thumbnail, timestamp, foote
     return embed;
 }
 
+exports.run = async (client, message, args) => {
 const embed2 = new Discord.RichEmbed()
-     embed.setTitle("Ninja Starboard Channel")
-      embed.setColor(config.embedColor)
-       embed.setDescription("You do not have a ``ninja-starboard`` channel so i have created one for you and placed it at the top of the channel lis, Please place it where you wish")
-        embed.setFooter("© Ninja Starboard Bot")  
+
+     embed2.setTitle("Ninja Starboard Channel")
+      embed2.setColor(config.embedColor)
+       embed2.setDescription("You do not have a ``ninja-starboard`` channel so i have created one for you and placed it at the top of the channel lis, Please place it where you wish")
+        embed2.setFooter("© Ninja Starboard Bot")  
     
 //if (!message.guild.channels.exists("name", "ninja-starboard")) return message.channel.send(embed2) .then(message.guild.createChannel("ninja-starboard", "text"))
     
