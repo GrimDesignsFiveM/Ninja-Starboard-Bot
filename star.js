@@ -110,18 +110,19 @@ let i = 0;
     }, time1)
   });
 
-client.on("guildCreate", guild => {
+star.on("guildCreate", guild => {
   // This event triggers when the bot joins a guild.
-let gcEmbed = new Discord.RichEmbed()
- .setTitle("Thanks For Adding Me")
- .setColor("#0x3dfbff")
- .setTimestamp()
- .setDescription("***Please Note:** Ninja Bot requires various channels to complete proper setup")
- .addField("Setup Help", "``nb/setup`` Shows you how to setup Ninja Bot") 
- .setFooter("Ninja Bot")
-  console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
-  client.user.setGame(`gen help in ${client.guilds.size} Servers`, `https://www.twitch.tv/monstercat`);
-  guild.owner.send(gcEmbed)
+const embed = new Discord.RichEmbed()
+ embed.setTitle("Thanks For Adding Me")
+ embed.setColor("#0x3dfbff")
+ embed.setTimestamp()
+ embed.setDescription("***Please Note:** Ninja Starboard requires a ``ninja-starboard`` channel to complete proper setup")
+ embed.addField("About Me", "``star about`` Tells you some info about me")
+embed.addField("Setup Help", "``star setup`` Shows you how to properly set me up")
+ embed.setFooter("Ninja Bot")
+  starLog(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
+  star.user.setGame(`gen help in ${star.guilds.size} Servers`, `https://www.twitch.tv/monstercat`);
+  guild.owner.send(embed)
  });
 
 //////////////////////////////***MESSAGE DELETE FUNCTIONS***/////////////////////////////////////////////
@@ -141,7 +142,7 @@ fs.readdir("./events/", (err, files) => {
   files.forEach(file => {
     const event = require(`./events/${file}`);
     let eventName = file.split(".")[0];
-    client.on(eventName, event.bind(null, client));
+    star.on(eventName, event.bind(null, star));
   });
 });
 
