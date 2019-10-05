@@ -44,15 +44,7 @@ module.exports = async (client, reaction, user) => {
             await starMsg.edit({ embed }).then(console.log('8'))
         }
     if(!stars) {
-
-const embed2 = new Discord.RichEmbed()
- embed2.setTitle("Starboard Channel")
- embed2.setColor(config.embedColor)
- embed2.setDescription("You do not have a ``ninja-starboard`` channel in server so i have created it for you \n and placed it at the top of the channel list \n Please place it where you wish")
- embed2.setFooter(`© Ninja Starboard Bot`, `https://i.imgur.com/NSHqjRM.jpg`);
-
-        if (!message.guild.channels.exists("name", "ninja-starboard",)) return message.channel.send(embed2).then(message.guild.createChannel("name", "ninja-starboard"))
-        //if(!message.guild.channels.exists("name", "ninja-starboard")) throw `It appears that you do not have a \`${config.starboardChannel}\` channel.`
+        if(!message.guild.channels.exists("name", "ninja-starboard")) throw `It appears that you do not have a ninja-starboard channel.`
         const embed = await starEmbed(15844367, message.cleanContent, message.author.tag, message.author.displayAvatarURL, new Date(), `⭐ 1 | ${message.id}`);
         await starboardChannel.send({ embed });
     }
