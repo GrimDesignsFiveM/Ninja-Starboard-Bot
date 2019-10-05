@@ -73,12 +73,13 @@ star.on("guildCreate", guild => {
   // This event triggers when the bot joins a guild.
 const embed = new Discord.RichEmbed()
  embed.setTitle("Thanks For Adding Me")
- embed.setColor("#0x3dfbff")
+ embed.setColor(embeds.embedColor)
  embed.setTimestamp()
- embed.setDescription("***Please Note:** Ninja Starboard requires a ``ninja-starboard`` channel to complete proper setup")
+ embed.setDescription(embeds.guildDescrpt)
  embed.addField("About Me", "``star about`` Tells you some info about me")
  embed.addField("Setup Help", "``star setup`` Shows you how to properly set me up")
  embed.addField("Starboard Invite", `[Invite Me Here](${embeds.invLink})`)
+ embed.addField("Starboard Support", `[Support Server](${embeds.helpLink})`)
  embed.setFooter(`${embeds.embedFooter}`, `${embeds.embedLink}`);
 
   starLog(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
