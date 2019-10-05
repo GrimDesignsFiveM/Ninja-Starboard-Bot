@@ -1,13 +1,7 @@
 {
     "token": "",
     "prefix": "star",
-    "prefix2": "Star",
-    "prefix3": "STAR",
-    "InvPerm": "ADMINISTRATOR",
-    "prefix4": "<${client.user.id}>",
     "starboard": "starboard",
-    "embedFooter": "© Ninja Starboard Bot",
-    "embedLink": "https://i.imgur.com/NSHqjRM.jpg",
     "ownerName": "ツ 𝕿𝖞𝖑𝖊𝖗. 𝕳 ツ#9393",
     "activity1": "star help",
     "type1": "STREAMING",
@@ -23,6 +17,7 @@
         "444609097233465347"
     ],
     "modules": [
-          "Admin"
+          "Help",
+          "System"
     ]
 }
