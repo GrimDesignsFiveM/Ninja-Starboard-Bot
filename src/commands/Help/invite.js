@@ -48,7 +48,7 @@ exports.conf = {
 exports.help = {
     name: 'invite',
     description: 'Generates a invite link',
-    usage: 'nb/invite',
+    usage: 'star invite',
     permissions: 'Everyone!',
     group: 'Help Module'
   };
