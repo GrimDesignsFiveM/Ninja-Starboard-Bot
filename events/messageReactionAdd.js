@@ -29,7 +29,7 @@ async function starEmbed(color, description, author, thumbnail, timestamp, foote
 }
 
 module.exports = async (client, reaction, user) => {
-
+const Discord = require('discord.js');
 const embed2 = new Discord.RichEmbed()
 
      embed2.setTitle("Ninja Starboard Channel")
