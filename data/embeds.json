@@ -3,6 +3,7 @@
     "embedFooter": "© Ninja Starboard Bot",
     "embedLink": "https://i.imgur.com/NSHqjRM.jpg",
     "invLink": "https://discordapp.com/api/oauth2/authorize?client_id=629452785112449054&permissions=2147483127&scope=bot",
+    "guildDescrpt": "***Please Note:** Ninja Starboard requires a ``ninja-starboard`` channel and the ``Administrator`` permission to complete proper setup",
     "embedColor": "",
     "helpLink": "https://discord.gg/yFmtAUM"
 }
