@@ -142,7 +142,7 @@ fs.readdir("./events/", (err, files) => {
   files.forEach(file => {
     const event = require(`./events/${file}`);
     let eventName = file.split(".")[0];
-    star.on(eventName, event.bind(null, client));
+    star.on(eventName, event.bind(null, star));
   });
 });
 
