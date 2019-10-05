@@ -57,10 +57,6 @@ const snekfetch = require('snekfetch');
 const talkedRecently = new Set();
 const token = process.env.BOT_TOKEN;
 const prefix = process.env.PREFIX;
-const prefix2 = require('./data/config.json');
-const prefix3 = require('./data/config.json');
-const prefix4 = require('./data/config.json');
-const InvPerm = require('./data/config.json');
 const star = new Discord.Client();
 const starLog = console.log;
 const config = require('./data/config.json');
@@ -82,10 +78,6 @@ const type3 = config.type3
 const type4 = config.type4
 const activity4 = config.activity4
 const time1 = config.activitytime
-star.music = require("discord.js-musicbot-addon");
-const musicCommands = require("./src/music.json");
-const embedFooter = require(config.embedFooter);
-const embedLink = require(config.embedLink);
 
 //////////////////////////////***PLAYING STATUS, INVITE TIMEOUTS & MORE***////////////////////////////////////////
   star.on('ready',  async () => {
