@@ -1,53 +1,15 @@
- /*//////////////////////////////////////////////////////////////////////////////////////
+ /*
+//////////////////////////////////////////////////////////////////////////////////////
  * Code by Tyler. H#9393!!
  * Ninja Starboard Bot
  *
  *  I DO NOT authorize you to use this bot or the corresponding code without my consent first violation of this term will result in a copyright strike or lawsuit
  *  If you fork this Bot repo make sure you give me credit for all files and folders associated as all the branding for this bot is registered and copy written. 
  *  Due to the fact that no license is provided with this bot that means that it falls under the not publicly available category.
- //////////////////////////////////////////////////////////////////////////////////////*/
-
-//////////////////////////////***IMPORT AND EXPORT MODULES***////////////////////////////////////////////////
-//////////////////////////////***TO AND FROM DATABASE/BANK***////////////////////////////////////////////////
-/*
-This imports all the folders and files for the required node modules from the bots database to be read (DO NOT touch these)
-//These import options will be disabled untill MySQL support is fully implemented, Enabling these without DB support will throw errors.
-//import Discord = require('discord.js');
-//import Music = require('discord.js-musicbot-addon');
-//import Enmap = require("enmap");
-//import fs = require("fs");
-//import snekfetch = require('snekfetch');
-//import talkedRecently = new Set();
-//import token = process.env.BOT_TOKEN; //Replace with config.token if self hosting and define the token in the config. 
-//import client = new Discord.Client();
-//import config = require('./data/config.json');
-//import adlinks = require('./src/blacklist/blacklistedlinks.json');
-//import offensivewords = require('./src/blacklist/blacklistedwords.json');
-//import profanities = require('./src/blacklist/blacklistedswears.json');
-//import antispam = require('discord-anti-spam');
-//import chalk = require('chalk');
-//import mysql = require('mysql');
-//import mongoose = require('mongoose');
-//import spamDetector = require('./anti_spam.js');
-//import Canvas = require('canvas');
-//import { Kayn, REGIONS } = require('kayn');
-//import mysql = require('mysql');
-//import file = require('../mysql.json');
-//import { CommandoClient } = require('./commando')
-//import jimp = require('jimp');
+ //////////////////////////////////////////////////////////////////////////////////////
 */
 
 //////////////////////////////***REQUIRED NODE MODULES***////////////////////////////////////////////////
-/* This is where the bot reads the required node modules, DO NOT touch these. */
-//const mysql = require('mysql');
-//const mongoose = require('mongoose');
-//const spamDetector = require('./anti_spam.js');
-//const { Kayn, REGIONS } = require('kayn');
-//const mysql = require('mysql');
-//const file = require('../mysql.json');
-//const { CommandoClient } = require('./commando')
-//const jimp = require('jimp');
-//const blacklist = require("./data/serverfilters.js");
 const Discord = require("discord.js");
 const Music = require('discord.js-musicbot-addon');
 const Enmap = require("enmap");
