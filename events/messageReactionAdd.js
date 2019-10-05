@@ -32,7 +32,19 @@ module.exports = async (client, reaction, user) => {
     const message = reaction.message;
     const config = require('../data/config.json');
     const starboardChannel = reaction.message.guild.channels.find("name", "ninja-starboard");
-      if(!message.guild.channels.exists("name", "ninja-starboard")) return reaction.message.channel.send("Nope")
+    const embed2 = new Discord.RichEmbed()
+     embed.setTitle("Ninja Starboard Channel")
+      embed.setColor(config.embedColor)
+       embed.setDescription("You do not have a ``ninja-starboard`` channel so i have created one for you and placed it at the top of the channel lis, Please place it where you wish")
+        embed.setFooter("© Ninja Starboard Bot")  
+    
+if (!message.guild.channels.exists("name", "ninja-starboard")) return message.channel.send(embed2) .then(message.guild.createChannel("ninja-starboard", "text"))
+    
+    const message = reaction.message;
+    const config = require('../data/config.json');
+    const starboardChannel = reaction.message.guild.channels.find("name", "ninja-starboard");
+         if (!message.guild.channels.exists("name", "ninja-starboard")) return message.channel.send(embed2) .then(message.guild.createChannel("ninja-starboard", "text"))       
+         //if(!message.guild.channels.exists("name", "ninja-starboard")) return reaction.message.channel.send("Nope")
     try {
         if(reaction.emoji.name !== "⭐") return console.log('1');
         const fetch = await starboardChannel.fetchMessages({ limit: 100 }).then(console.log('2'));
