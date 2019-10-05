@@ -2,7 +2,7 @@
  * Code by Tyler. H#9393!!
  * Ninja Starboard Bot
  *
- *  I DO NOT authorize you to use this bot or the corresponding code without my consent first violation in this term will result in a copyright strike or lawsuit
+ *  I DO NOT authorize you to use this bot or the corresponding code without my consent first violation of this term will result in a copyright strike or lawsuit
  *  If you fork this Bot repo make sure you give me credit for all files and folders associated as all the branding for this bot is registered and copy written. 
  *  Due to the fact that no license is provided with this bot that means that it falls under the not publicly available category.
  //////////////////////////////////////////////////////////////////////////////////////*/
@@ -83,6 +83,8 @@ const activity4 = config.activity4
 const time1 = config.activitytime
 star.music = require("discord.js-musicbot-addon");
 const musicCommands = require("./src/music.json");
+const embedFooter = require(config.embedFooter);
+const embedLink = require(config.embedLink);
 
 //////////////////////////////***PLAYING STATUS, INVITE TIMEOUTS & MORE***////////////////////////////////////////
   star.on('ready',  async () => {
@@ -95,6 +97,12 @@ let activities = [
   },
   {
     name:`${activity2} for ${star.users.size} Users`,
+     options:{
+      type:`${type2}`
+    }
+  },
+ {
+    name:`${activity3}`,
      options:{
       type:`${type2}`
     }
@@ -121,6 +129,7 @@ const embed = new Discord.RichEmbed()
  embed.addField("Setup Help", "``star setup`` Shows you how to properly set me up")
  embed.addField("Starboard Invite", `[Invite Me Here](https://discordapp.com/api/oauth2/authorize?client_id=629452785112449054&permissions=2147483127&scope=bot)`)
  embed.setFooter(`© Ninja Starboard Bot`, `https://i.imgur.com/NSHqjRM.jpg`);
+
   starLog(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
   star.user.setGame(`gen help in ${star.guilds.size} Servers`, `https://www.twitch.tv/monstercat`);
   guild.owner.send(embed)
