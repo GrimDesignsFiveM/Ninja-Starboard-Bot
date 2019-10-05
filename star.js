@@ -118,8 +118,9 @@ const embed = new Discord.RichEmbed()
  embed.setTimestamp()
  embed.setDescription("***Please Note:** Ninja Starboard requires a ``ninja-starboard`` channel to complete proper setup")
  embed.addField("About Me", "``star about`` Tells you some info about me")
-embed.addField("Setup Help", "``star setup`` Shows you how to properly set me up")
- embed.setFooter("Ninja Bot")
+ embed.addField("Setup Help", "``star setup`` Shows you how to properly set me up")
+ embed.addField("Starboard Invite", `[Invite Me Here](https://discordapp.com/api/oauth2/authorize?client_id=629452785112449054&permissions=2147483127&scope=bot)`)
+ embed.setFooter(`© Ninja Starboard Bot`, `https://i.imgur.com/NSHqjRM.jpg`);
   starLog(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
   star.user.setGame(`gen help in ${star.guilds.size} Servers`, `https://www.twitch.tv/monstercat`);
   guild.owner.send(embed)
@@ -153,22 +154,6 @@ star.aliases = new Enmap();
 star.on('message', message => {
   if(message.author.bot) return;
 })
-
-//////////////////////////////***DEFINE COMMANDS FUNCTION***////////////////////////////////////////////////
-//client.commands = new Discord.Collection(); // Collection for all commands
-//client.aliases = new Discord.Collection(); // Collection for all aliases of every ccommand
-
-//This code line allows the commands to be individual/seperate files
-fs.readdir("./commands/", (err, files) => {
-  if (err) return console.error(err);
-  files.forEach(file => {
-    if (!file.endsWith(".js")) return;
-    let props = require(`./commands/${file}`);
-    let commandName = file.split(".")[0];
-    starLog(`Attempting to load command ${commandName}`);
-    star.commands.set(commandName, props);
-  });
-});
 
 //////////////////////////////***DEFINE COMMANDS FUNCTION***////////////////////////////////////////////////
 const modules = ['Help']; // This will be the list of the names of all modules (folder) your bot oown
