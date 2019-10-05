@@ -4,6 +4,7 @@ async function starEmbed(color, description, author, thumbnail, timestamp, foote
     const embed = {
         "author": {
             "name": `Ninja Hall Of Fame`,
+            "icon_url": "https://i.imgur.com/NSHqjRM.jpg",
             "url": "https://ninja-bot.webnode.com/",
         },
         "color": color,
