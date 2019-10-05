@@ -38,8 +38,8 @@ const embed = new Discord.RichEmbed()
    embed.addField("Code Library", "[discord.js](https://discord.js.org/#/)", true)
    embed.addField('Current Status', `${star.user.presence.status.toUpperCase()}`, true)
    embed.addField('Current Game', `Streaming **${star.user.presence.game === null ? "No Game" : star.user.presence.game.name}**`, true)
-   embed.addField('Bot Creation Date', `${moment(star.user.createdAt).toString().substr(0, 15)}\n(${moment(star.user.createdAt).fromNow()})`, true)        
-   embed.addField("Open Source Project", "Yes this is an open source project | [GitHub Repo](https://github.com/GrimDesignsFiveM/Ninja-Starboard-Bot)", true)
+   embed.addField('Bot Created', `${moment(star.user.createdAt).toString().substr(0, 15)}\n(${moment(star.user.createdAt).fromNow()})`, true)        
+   embed.addField("Source Code", "Yes this is an open source project | [GitHub Repo](https://github.com/GrimDesignsFiveM/Ninja-Starboard-Bot)", true)
    embed.addField("Starboard Support", "[Support Server](https://discord.gg/yFmtAUM)", true)
    embed.setFooter(`© Ninja Starboard Bot`, `https://i.imgur.com/NSHqjRM.jpg`);
    message.channel.send(embed).then(sentMessage => {
