@@ -1,9 +1,9 @@
 const Discord = require('discord.js');
 
-module.exports = (client, message) => {
+module.exports = (star, message) => {
     if (message.author.bot) return;
 
-    if (message.content.indexOf(client.config.prefix) !== 0) return;
+    if (message.content.indexOf(star.config.prefix) !== 0) return;
 
 
     let blEmbed = new Discord.RichEmbed()
@@ -65,7 +65,7 @@ module.exports = (client, message) => {
        return message.channel.send(sEmbed);
     } */
 
-    client.message = message;
+    star.message = message;
 
 let cmdEmbed = new Discord.RichEmbed()
     .setTitle(":no_entry: Command Error :no_entry:")
@@ -73,14 +73,14 @@ let cmdEmbed = new Discord.RichEmbed()
     .setTimestamp()
     .setDescription(`<@${message.author.id}> Sorry that command doesn't exist :shrug:`)
 
-    const args = message.content.slice(client.config.prefix.length).trim().split(/ +/g);
+    const args = message.content.slice(star.config.prefix.length).trim().split(/ +/g);
     //console.log(args);
     const command = args.shift().toLowerCase();
     //console.log(command);
-    const cmd = client.commands.get(command);
+    const cmd = star.commands.get(command);
     //console.log(cmd);
     if (!cmd) return message.channel.send(cmdEmbed);
 
     //console.log(cmd);
-    cmd.run(client, message, args);
+    cmd.run(star, message, args);
 };
