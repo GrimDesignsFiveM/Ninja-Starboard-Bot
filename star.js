@@ -156,7 +156,7 @@ star.on('message', message => {
 })
 
 //////////////////////////////***DEFINE COMMANDS FUNCTION***////////////////////////////////////////////////
-const modules = ['Help']; // This will be the list of the names of all modules (folder) your bot oown
+const modules = ['Help', 'System']; // This will be the list of the names of all modules (folder) your bot oown
 
 modules.forEach(c => {
 fs.readdir(`./src/commands/${c}/`, (err, files) => { // Here we go through all folders (modules)
