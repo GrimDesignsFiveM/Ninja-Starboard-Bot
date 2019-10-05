@@ -105,7 +105,7 @@ let i = 0;
     starLog(`${star.user.username} has started, with ${star.users.size} users, in ${star.channels.size} channels of ${star.guilds.size} guilds.`);
     timers.setInterval(() => {
       i = i == activities.length ? 0 : i
-      client.user.setActivity(activities[i].name, activities[i].options)
+      star.user.setActivity(activities[i].name, activities[i].options)
       i++
     }, time1)
   });
