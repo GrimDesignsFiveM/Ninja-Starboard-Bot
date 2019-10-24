@@ -36,6 +36,11 @@ const time1 = config.activitytime
 const prefix = process.env.PREFIX;
 
 //////////////////////////////***PLAYING STATUS, INVITE TIMEOUTS & MORE***////////////////////////////////////////
+star.on("ready",  async () => {
+//console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
+ star.user.setGame(`Starting Up My Code`, `https://www.twitch.tv/monstercat`);
+});
+
   star.on('ready',  async () => {
 let activities = [
   {
@@ -66,17 +71,6 @@ let i = 0;
       i++
     }, time1)
   });
-
-// A pretty useful method to create a delay without blocking the whole script.
-const wait = require('util').promisify(setTimeout);
- 
-//This is the bots startup log output and playing status.
-star.on("ready",  async () => {
-//console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
- star.user.setActivity(`Starting Up My Code`);
- 
-  // "ready" isn't really ready. We need to wait a spell.
-  wait(1000); 
 
 // Try local JSON config, if not, expect Process Env (Heroku)
 try{
