@@ -33,6 +33,7 @@ const type3 = config.type3
 const type4 = config.type4
 const activity4 = config.activity4
 const time1 = config.activitytime
+const prefix = process.env.PREFIX;
 
 //////////////////////////////***PLAYING STATUS, INVITE TIMEOUTS & MORE***////////////////////////////////////////
   star.on('ready',  async () => {
