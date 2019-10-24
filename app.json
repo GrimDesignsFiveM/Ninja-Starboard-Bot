@@ -13,7 +13,7 @@
   "logo": "https://cdn.discordapp.com/avatars/636337796617076784/aed421d35f91ce91de1addfe7df4edb4.png?size=2048?size=1024",
   
   "env": {
-    "SELFBOT_CLIENTID": {
+    "CLIENTID": {
       "description": "Discord Client Id. Get it here: https://discordapp.com/developers/applications/",
 	  "required": true
     },
@@ -26,16 +26,16 @@
 	  "required": true
     },
     "dbotsToken": {
-      "description": "LoL Api Key. Instructions how to get this: https://nadekobot.readthedocs.io/en/latest/JSON%20Explanations/",
+      "description": "DBL (Discord Bot List) Token",
 	  "required": false
     },
     "dbotsToken2": {
-      "description": "Google Api Key. Instructions how to get this: https://nadekobot.readthedocs.io/en/latest/JSON%20Explanations/",
+      "description": "DBL (Discord Bot List) Token",
 	  "required": false
     },
     "OWNERID": {
-      "description": "Mashape Key. Instructions how to get this: https://nadekobot.readthedocs.io/en/latest/JSON%20Explanations/",
-	  "required": false
+      "description": "Bot Owners Discord ID/s, To add more then one seperate with , ",
+	  "required": true
     }
   },
   "formation": {
