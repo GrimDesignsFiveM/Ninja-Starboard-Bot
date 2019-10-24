@@ -71,7 +71,7 @@ let i = 0;
 const wait = require('util').promisify(setTimeout);
  
 //This is the bots startup log output and playing status.
-//client.on("ready",  async () => {
+star.on("ready",  async () => {
 //console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
  star.user.setActivity(`Starting Up My Code`);
  
