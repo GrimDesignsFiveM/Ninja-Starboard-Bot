@@ -27,11 +27,11 @@
     },
     "dbotsToken": {
       "description": "DBL (Discord Bot List) Token",
-	  "required": true
+	  "required": false
     },
     "dbotsToken2": {
       "description": "DBL (Discord Bot List) Token",
-	  "required": true
+	  "required": false
     },
     "OWNERID": {
       "description": "Owners Id, to assign more than one use comma(,) to separate.",
