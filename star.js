@@ -75,8 +75,8 @@ try{
       token: process.env.BOT_TOKEN,
       prefix: process.env.PREFIX,
       ownerid: process.env.OWNERID,
-      dblToken: process.env.dblToken,
-      dblToken2: process.env.sblToken2
+      dbotsToken: process.env.dbotsToken,
+      dbotsToken2: process.env.dbotsToken2
     };
   } else {
     throw "NO CONFIG FILE FOUND, NO ENV CONF FOUND, EXITING";
