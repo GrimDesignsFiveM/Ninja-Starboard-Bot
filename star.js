@@ -73,7 +73,7 @@ const wait = require('util').promisify(setTimeout);
 //This is the bots startup log output and playing status.
 //client.on("ready",  async () => {
 //console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
- client.user.setGame(`Starting Up My Code`, `https://www.twitch.tv/monstercat`);
+ star.user.setGame(`Starting Up My Code`, `https://www.twitch.tv/monstercat`);
  
   // "ready" isn't really ready. We need to wait a spell.
   wait(1000); 
