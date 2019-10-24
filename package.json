@@ -7,6 +7,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+"engines": {
+   "node": "10"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -44,7 +47,6 @@
     "lodash.unset": "^4.5.2",
     "moment": "^2.24.0",
     "moment-duration-format": "^2.3.2",
-    "node-gyp": "^4.0.0",
     "node-superfetch": "^0.1.9",
     "os-utils": "0.0.14",
     "opusscript": "0.0.6",
