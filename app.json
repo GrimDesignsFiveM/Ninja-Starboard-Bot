@@ -22,7 +22,7 @@
 	  "required": true
     },
     "PREFIX": {
-      "description": "Owners Id, to assign more than one use comma(,) to separate. Instructions how to get this: https://nadekobot.readthedocs.io/en/latest/JSON%20Explanations/",
+      "description": "Discord Bot Prefix",
 	  "required": true
     },
     "dbotsToken": {
@@ -34,7 +34,7 @@
 	  "required": false
     },
     "OWNERID": {
-      "description": "Bot Owners Discord ID/s, To add more then one seperate with , ",
+      "description": "Owners Id, to assign more than one use comma(,) to separate.",
 	  "required": true
     }
   },
