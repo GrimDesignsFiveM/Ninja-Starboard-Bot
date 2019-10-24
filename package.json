@@ -1,13 +1,13 @@
 {
-  "name": "ninja-starboard",
+  "name": "Ninja Starboard",
   "version": "1.0.0",
   "lockfileVersion": 1,
   "description": "",
-  "main": "star.js",
+  "main": "index.js",
   "scripts": {
-    "test": "/help"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["starboard"],
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -19,7 +19,7 @@
     "crypto": "^1.0.1",
     "d3": "^5.9.2",
     "d3-fetch": "^1.1.2",
-    "discord.js": "^11.5.1",
+    "discord.js": "^11.3.2",
     "discord-anti-spam": "^2.0.0",
     "discord.js-musicbot-addon": "^12.0.6",
     "discord-auditlog": "^1.8.1", 
@@ -62,3 +62,4 @@
     "youtube-node": "^1.3.3"
   }
 }
+ 
