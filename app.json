@@ -9,15 +9,15 @@
    "env": {
     "BOT_TOKEN": {
       "description": "A Secret Bot Token, Used To Login The BOT. Get The Token In Your App Settings.",
-      "value": "",
+      "value": ""
       
     "PREFIX": {
       "description": "Your Bots Prefix",
-      "value": "",
+      "value": ""
  
    "dbotsToken1": {
      "description": "A secret token used to connect to the Discord Bot List API",
-     "value": "",
+     "value": ""
  
    "dbotsToken2": {
      "description": "A secret token used to connect to the Discord Bot List API",
