@@ -1,6 +1,6 @@
 {
-  "name": "Ninja Bot",
-  "description": "Discords Number One Fun And Mod Bot",
+  "name": "Ninja Starboard",
+  "description": "A basic Starboard Bot",
   "keywords": [
     "node",
     "heroku",
@@ -14,11 +14,11 @@
     "PREFIX": {
       "description": "Your Bots Prefix",
       "value": ""
-
+ 
    "dbotsToken1": {
      "description": "A secret token used to connect to the Discord Bot List API",
      "value": ""
-
+ 
    "dbotsToken2": {
      "description": "A secret token used to connect to the Discord Bot List API",
      "value": ""
@@ -34,3 +34,4 @@
     }
   ]
 }
+ 
