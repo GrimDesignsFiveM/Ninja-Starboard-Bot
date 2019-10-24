@@ -38,7 +38,7 @@ const prefix = process.env.PREFIX;
 //////////////////////////////***PLAYING STATUS, INVITE TIMEOUTS & MORE***////////////////////////////////////////
 star.on("ready",  async () => {
 //console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
- star.user.setGame(`Watching My Code Start Up`, `https://www.twitch.tv/monstercat`);
+ star.user.setGame("Starting Up My Code");
 });
 
   star.on('ready',  async () => {
