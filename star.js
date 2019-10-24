@@ -1,6 +1,5 @@
- /*
 //////////////////////////////////////////////////////////////////////////////////////
- * Code by Tyler. H#9393!!
+ * Code by Tyler. H#9393!! (☣ Tσxιƈ Dҽʋ ☣#7308)
  * Ninja Starboard Bot
  *
  *  I DO NOT authorize you to use this bot or the corresponding code without my consent first violation of this term will result in a copyright strike or lawsuit
@@ -135,7 +134,7 @@ fs.readdir(`./src/commands/${c}/`, (err, files) => { // Here we go through all f
 });
 star.login(process.env.BOT_TOKEN); //process.env.BOT_TOKEN Allows the token to be defined and set via the bots database to ensure it is never public!
 
-/* Code by Tyler. H#9393!!
+/* Code by Tyler. H#9393!! (☣ Tσxιƈ Dҽʋ ☣#7308)
  *  I DO NOT authorize you to use this bot or the corresponding code without my consent first.
  *  If you fork this Bot repo make sure you give me credit for all files and folders associated. 
  *  Due to the fact that no license is provided with this bot that means that it falls under the not publicly available category.
