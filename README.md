@@ -23,6 +23,6 @@ A basic Open Source Discord Starboard Bot
 To self host `Ninja Starboard Bot` use the deploy button below and fill out the required info
 And you can deploy your own version of the bot to heroku!
 
-<a href="https://heroku.com/deploy?template=https://github.com/GrimDesignsFiveM/Ninja-Starboard-Bot&env[dbotsToken]=1234483839&env[dbotsToken2]=173719273">
+<a href="https://heroku.com/deploy?template=https://github.com/GrimDesignsFiveM/Ninja-Starboard-Bot">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
