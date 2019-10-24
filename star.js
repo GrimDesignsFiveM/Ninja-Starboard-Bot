@@ -16,8 +16,6 @@ const fs = require("fs");
 const moment = require("moment"); 
 const snekfetch = require('snekfetch');
 const talkedRecently = new Set();
-const token = process.env.BOT_TOKEN;
-const prefix = process.env.PREFIX;
 const star = new Discord.Client();
 const starLog = console.log;
 const config = require('./data/config.json');
@@ -67,6 +65,23 @@ let i = 0;
       i++
     }, time1)
   });
+
+// Try local JSON config, if not, expect Process Env (Heroku)
+try{
+  star.config = require("./data/config.json");
+} catch (e) {
+  if(process.env.botToken) {
+    ninja.config = {
+      token: process.env.BOT_TOKEN,
+      prefix: process.env.PREFIX,
+      ownerid: process.env.OWNERID,
+      dblToken: process.env.dblToken,
+      dblToken2: process.env.sblToken2
+    };
+  } else {
+    throw "NO CONFIG FILE FOUND, NO ENV CONF FOUND, EXITING";
+  }
+}
 
 star.on("guildCreate", guild => {
   // This event triggers when the bot joins a guild.
