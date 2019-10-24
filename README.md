@@ -20,7 +20,7 @@ A basic Open Source Discord Starboard Bot
 •  Please make sure you run the setup command as `Ninja Starboard Bot` requires a certain channel
 
 ### Self Hosting
-To self host `Ninja Starboard Bot use the deploy buttom below and fill out the required info
+To self host `Ninja Starboard Bot` use the deploy button below and fill out the required info
 And you can deploy your own version of the bot to heroku!
 
 <a href="https://heroku.com/deploy?template=https://github.com/GrimDesignsFiveM/Ninja-Starboard-Bot">
