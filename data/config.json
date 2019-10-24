@@ -1,20 +1,20 @@
 {
     "token": "",
     "prefix": "star",
-    "starboard": "starboard",
-    "ownerName": "ツ 𝕿𝖞𝖑𝖊𝖗. 𝕳 ツ#9393",
-    "activity1": "Dev: ツ 𝕿𝖞𝖑𝖊𝖗. 𝕳 ツ",
+    "starboard": "ninja-starboard",
+    "ownerName": "🔹TRYHXRD🔹#5831",
+    "activity1": "star setup",
     "type1": "STREAMING",
     "url": "https://www.twitch.tv/monstercat",
-    "activity2": "star setup",
+    "activity2": "Owner: 🔹TRYHXRD🔹#5831",
     "type2": "STREAMING",
     "url": "https://www.twitch.tv/monstercat",
-    "activity3": "Counting Stars",
+    "activity3": "Dev: ☣ Tσxιƈ Dҽʋ ☣#7308",
     "type3": "STREAMING",
     "url": "https://www.twitch.tv/monstercat",
-    "activitytime": "3000",
+    "activitytime": "120000",
     "ownerID": [
-        "444609097233465347"
+        ""
     ],
     "modules": [
           "Help",
