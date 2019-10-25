@@ -22,7 +22,7 @@
 	  "required": true
     },
     "PREFIX": {
-      "description": "Discord Bot Prefix",
+      "description": "Discord Bot Prefix, If you change this please make sure you change it in the config aswell.",
 	  "required": true
     },
     "dbotsToken": {
