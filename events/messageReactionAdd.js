@@ -63,12 +63,4 @@ const embed2 = new Discord.RichEmbed()
 } catch (error) {
     console.log(error);
   }
-
-extension(reaction, attachment) {
-    const imageLink = attachment.split('.');
-    const typeOfImage = imageLink[imageLink.length - 1];
-    const image = /(jpg|jpeg|png|gif)/gi.test(typeOfImage);
-    if (!image) return '';
-    return attachment;
-  }
 };
