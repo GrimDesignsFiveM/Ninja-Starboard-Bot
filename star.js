@@ -44,19 +44,19 @@ star.on("ready",  async () => {
   star.on('ready',  async () => {
 let activities = [
   {
-    name:`${activity1} in ${star.guilds.size} Servers`,
+    name:`${activity1}`,
      options:{
       type:`${type1}`
     }
   },
   {
-    name:`${activity2} for ${star.users.size} Users`,
+    name:`${activity2}`,
      options:{
       type:`${type2}`
     }
   },
  {
-    name:`${activity3}`,
+    name:`${activity3} for ${star.users.size} Users`,
      options:{
       type:`${type2}`
     }
