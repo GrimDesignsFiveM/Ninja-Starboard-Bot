@@ -44,7 +44,7 @@ star.on("ready",  async () => {
   star.on('ready',  async () => {
 let activities = [
   {
-    name:`${activity1}`,
+    name:`${activity1} for ${star.users.size} Users`,
      options:{
       type:`${type1}`
     }
@@ -56,7 +56,7 @@ let activities = [
     }
   },
  {
-    name:`${activity3} for ${star.users.size} Users`,
+    name:`${activity3}`,
      options:{
       type:`${type2}`
     }
