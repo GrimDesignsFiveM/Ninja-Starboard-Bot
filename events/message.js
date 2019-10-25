@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const config = require("../data/config.json")
+const prefix = process.env.PREFIX;
 
 module.exports = (star, message) => {
     if (message.author.bot) return;
@@ -74,7 +75,7 @@ let cmdEmbed = new Discord.RichEmbed()
     .setTimestamp()
     .setDescription(`<@${message.author.id}> Sorry that command doesn't exist :shrug:`)
 
-    const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+    const args = message.content.slice(prefix.length).trim().split(/ +/g);
     //console.log(args);
     const command = args.shift().toLowerCase();
     //console.log(command);
