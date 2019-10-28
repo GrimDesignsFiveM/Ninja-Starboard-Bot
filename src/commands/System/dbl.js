@@ -8,7 +8,7 @@ const request = require('superagent');
 exports.run = async (client, message, args) => {
 if (message.author.id !== '510065483693817867') return message.channel.send('You scrub, what made you think you\'d be able to do that??');
  request.post(`https://discordbots.org/api/bots/${client.user.id}/stats`)
-      .set('Authorization', process.env.dbotsToken1)
+      .set('Authorization', process.env.dbotsToken)
       .send({ server_count: client.guilds.size })
       .end();
     message.reply("Successfully fetched the Discord Bot List API");
