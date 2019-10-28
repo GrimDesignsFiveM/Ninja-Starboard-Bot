@@ -26,12 +26,14 @@
 	  "required": true
     },
     "dbotsToken": {
-      "description": "DBL (Discord Bot List) Token",
-	  "required": false
+      "description": "DBL (Discord Bot List) Token (DO NOT CHANGE THIS)",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNjMzNzc5NjYxNzA3Njc4NCIsImJvdCI6dHJ1ZSwiaWF0IjoxNTcyMjk2MzIwfQ.aIq45s-DzLy0YXilORcZBPnDPpDtGLnZtk_UV6nw2gA",
+	  "required": true
     },
     "dbotsToken2": {
-      "description": "DBL (Discord Bot List) Token",
-	  "required": false
+      "description": "DBL (Discord Bot List) Token (DO NOT CHANGE THIS)",
+         "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNjMzNzc5NjYxNzA3Njc4NCIsImJvdCI6dHJ1ZSwiaWF0IjoxNTcyMjk2MzIwfQ.aIq45s-DzLy0YXilORcZBPnDPpDtGLnZtk_UV6nw2gA",
+	  "required": true
     },
     "OWNERID": {
       "description": "Owners Id, to assign more than one use comma(,) to separate.",
