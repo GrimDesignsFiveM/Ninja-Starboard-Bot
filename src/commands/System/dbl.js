@@ -10,15 +10,11 @@ if (message.author.id !== '510065483693817867') return message.channel.send('You
  request.post(`https://discordbots.org/api/bots/${client.user.id}/stats`)
       .set('Authorization', process.env.dbotsToken)
       .send({ server_count: client.guilds.size })
-      .send({ shard_count: client.shards.total})
-      .send({ shard_id: client.shards.id})
       .end();
     message.reply("Successfully fetched the Discord Bot List API");
     request.post(`https://bots.discord.pw/api/bots/${client.user.id}/stats`)
       .set('Authorization', process.env.dbotsToken2)
       .send({ server_count: client.guilds.size })
-      .send({ shard_count: client.shards.total})
-      .send({ shard_id: client.shards.id})
       .end();
     message.reply("Discord Bot List guild count updated");
     message.reply("Bot List page updated, Finished :white_check_mark:");
